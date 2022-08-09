@@ -35,9 +35,7 @@ public class ServidorView {
         serv.setSenha(ler.nextLine());
         System.out.println("Perfil(1-ADM | 2-COMUM : ");
         serv.setPerfil(Integer.parseInt(ler.nextLine()));
-        
-        
-        
+
         Campus[] campusAll = campusDAO.getAll();
         for (Campus campus : campusAll) {
             if (campus != null) {
